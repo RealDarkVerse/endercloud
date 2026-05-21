@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,8 +10,11 @@
 <link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body class="auth-page">
+
+<!-- BUBBLES -->
 
 <div class="bubbles">
 
@@ -23,6 +27,8 @@
 
 </div>
 
+<!-- NAVBAR -->
+
 <nav>
 
     <div class="logo">
@@ -30,13 +36,19 @@
     </div>
 
     <ul>
+
         <li><a href="index.html">Home</a></li>
         <li><a href="minecraft.html">Minecraft</a></li>
         <li><a href="vps.html">VPS</a></li>
+        <li><a href="domains.html">Domains</a></li>
+        <li><a href="bot-hosting.html">Bot Hosting</a></li>
         <li><a href="contact.html">Contact</a></li>
+
     </ul>
 
 </nav>
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -47,18 +59,29 @@
         </h1>
 
         <p>
-            Manage your hosting services,
-            VPS servers and billing easily.
+            Login or create your account
+            to manage your hosting services,
+            billing and game servers.
         </p>
 
         <div class="hero-buttons">
 
-            <a href="#" class="btn btn-primary">
-                Login
+            <!-- LOGIN BUTTON -->
+
+            <a href="#login-box"
+               class="btn btn-primary">
+
+               Login
+
             </a>
 
-            <a href="#" class="btn btn-secondary">
-                Register
+            <!-- REGISTER BUTTON -->
+
+            <a href="#register-box"
+               class="btn btn-secondary">
+
+               Register
+
             </a>
 
         </div>
@@ -66,6 +89,82 @@
     </div>
 
 </section>
+
+<!-- LOGIN SECTION -->
+
+<section class="auth-container" id="login-box">
+
+    <div class="auth-box">
+
+        <h1>Login</h1>
+
+        <form>
+
+            <input type="email"
+                   placeholder="Enter Email"
+                   required>
+
+            <input type="password"
+                   placeholder="Enter Password"
+                   required>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <p>
+            Don't have an account?
+            <a href="#register-box">Register</a>
+        </p>
+
+    </div>
+
+</section>
+
+<!-- REGISTER SECTION -->
+
+<section class="auth-container" id="register-box">
+
+    <div class="auth-box">
+
+        <h1>Create Account</h1>
+
+        <form>
+
+            <input type="text"
+                   placeholder="Enter Username"
+                   required>
+
+            <input type="email"
+                   placeholder="Enter Email"
+                   required>
+
+            <input type="password"
+                   placeholder="Create Password"
+                   required>
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+        <p>
+            Already have an account?
+            <a href="#login-box">Login</a>
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    © 2026 ENDERCLOUDHOST • All Rights Reserved
+</footer>
 
 <script src="script.js"></script>
 
